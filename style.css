@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fondo.svg');
+    opacity: 0.5; /* Opacidad del 50% */
+    z-index: -1; /* Colocar el pseudo-elemento detrás del contenido del elemento principal */
+  }
+
+.contenedor {
+    padding: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.formulario {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.titulo {
+    border-radius: 5px 0px 5px 0px;
+    background-color: #C03028;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.footer {
+    border-radius: 0px 5px 0px 5px;
+    background-color: #C03028;
+    color: white;
+    font-style: italic;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px #97251f;
+    outline: none;
+    border: none;
+    caret-color: #C03028;
+    color: rgb(36, 33, 33);
+}
+input::placeholder { color: #c030286d }
+
+button {
+    height: 46px;
+    padding: 5px;
+    color: white;
+    background-color: #C03028;
+    border: none;
+    box-shadow: 1px 2px 5px #97251f;
+    font-size: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+button:hover { background-color: #cf5d57; cursor: pointer; }
+
+.carta {
+    max-width: 399px;
+    height: 550px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #999;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.esfera {
+    width: 390px;
+    height: 390px;
+    background-color: #725327;
+    margin: auto;
+    border-radius: 100%;
+    margin-top: -220px;
+
+}
+
+.imagen {
+    text-align: center;
+    margin-top: -60px;
+}
+
+img {
+    max-width: 360px;
+    scale: 2;
+}
+
+.nombre {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.tipo {
+    font-size: 12px;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.stats {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.stat {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+}
+
+span {
+    display: block;
+}
+
+.stat > span:nth-child(1) {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.stat > span:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.normal {
+    background-color: #A8A878;
+}
+.fire {
+    background-color: #F08030;
+}
+.electric {
+    background-color: #F8D030;
+}
+.flying {
+    background-color: #A890F0;
+}
+.ground {
+    background-color: #E0C068;
+}
+.water {
+    background-color: #6890F0;
+}
+.grass {
+    background-color: #78C850;
+}
+.poison {
+    background-color: #A040A0;
+}
+.dragon {
+    background-color: #7038F8;
+}
+.psychic {
+    background-color: #F85888;
+}
+.fighting {
+    background-color: #C03028;
+}
+.rock {
+    background-color: #B8A038;
+}
+.ghost {
+    background-color: #705898;
+}
+.bug {
+    background-color: #A8B820;
+}
+.steel {
+    background-color: #B8B8D0;
+}
+.ice {
+    background-color: #98D8D8;
+}
+.dark {
+    background-color: #705848;
+}
+.fairy {
+    background-color: #EE99AC;
+}
